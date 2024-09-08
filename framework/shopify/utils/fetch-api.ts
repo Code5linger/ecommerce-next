@@ -1,11 +1,11 @@
-type FetcherResult<T> = { data: T };
+import { ApiFetcherOptions, ApiFetcherResults } from '@common/types/api';
+// import { API_URL, STOREFRONT_TOKEN } from '@framework/const';
 
 const fetchApi = async <T>({
+  url,
   query,
-}: {
-  query: string;
-}): Promise<FetcherResult<T>> => {
-  const url = 'http://localhost:4000/graphql';
+}: ApiFetcherOptions): Promise<ApiFetcherResults<T>> => {
+  // const url = 'http://localhost:4000/graphql';
 
   const res = await fetch(url, {
     method: 'POST',

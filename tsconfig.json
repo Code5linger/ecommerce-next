@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -14,14 +18,32 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "@common": ["framework/common"],
-      "@common/*": ["framework/common/*"],
-      "@framework": ["framework/shopify"],
-      "@framework/*": ["framework/shopify/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@common": [
+        "framework/common"
+      ],
+      "@common/*": [
+        "framework/common/*"
+      ],
+      "@framework": [
+        "framework/shopify"
+      ],
+      "@framework/*": [
+        "framework/shopify/*"
+      ]
     },
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
