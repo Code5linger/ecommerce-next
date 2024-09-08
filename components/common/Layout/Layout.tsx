@@ -21,7 +21,11 @@ const Layout: FC = ({ children }) => {
     //         <Footer />
     //       </div>
     //     </ApiProvider>
-    <div className="layout">{children}</div>
+    <div className=" root">
+      <main className="fit" style={{ color: 'var(--primary)' }}>
+        {children}
+      </main>
+    </div>
   );
 };
 

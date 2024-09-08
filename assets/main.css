@@ -11,5 +11,11 @@
 }
 
 .layout {
-  background: red;
+  background: gray;
+}
+
+.root {
+  @apply h-full mx-auto;
+  /* max-width: 1000px; */
+  background: var(--green);
 }
